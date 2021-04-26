@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="Fname" placeholder="First Name"><br></br>
+        <input type="text" id="Lname" placeholder="Last Name"><br></br>
+        <button type="button" onclick="papar();">Papar</button><br>
+        <span id="hasil"></span>
+    
+        <script>
+            function papar() {
+                let Fname = document.getElementById('Fname').value;
+                let Lname = document.getElementById('Lname').value;
+                document.getElementById('hasil').innerHTML = '<b>Encik</b> ' + Fname + Lname;
+            }
+        </script>
+</body>
+</html>
